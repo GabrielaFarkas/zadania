@@ -1,7 +1,4 @@
 # zadania
-zadania
-necessary to have:
-
 version control commands:
 node -v
 nmp -v
@@ -13,12 +10,6 @@ https://nodejs.org/en/download/prebuilt-installer
 npm
 npm install -g npm
 
-typescript
-npm install typescript --save-dev
-npx tsc
-
-playwright
-npm init playwright@latest
 
 PW commands:
   npx playwright test
@@ -38,5 +29,3 @@ PW commands:
 
   npx playwright codegen
     Auto generate tests with Codegen.
-
-    npx playwright test
