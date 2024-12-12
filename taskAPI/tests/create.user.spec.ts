@@ -32,6 +32,9 @@ test.describe('POST- Create users test', () => {
         expect(response.id).toBeDefined();
         expect(response.createdAt).toBeDefined();
 
+        expect(responseData.id).toBeDefined();
+        expect(responseData.createdAt).toBeDefined();
+
         const { error } = responseSchema.validate(responseData);
         expect(error).toBeFalsy();
     });
