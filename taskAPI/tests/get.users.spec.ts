@@ -47,6 +47,17 @@ test.describe('GET-List of users test', () => {
             expect(element.first_name).toBeDefined();
             expect(element.last_name).toBeDefined();
             expect(element.avatar).toBeDefined();
+
+            //Data types validation
+            expect(typeof element.id).toBe('number'); // 'id' should be a number
+            expect(typeof element.email).toBe('string'); // 'email' should be a string
+            expect(typeof element.first_name).toBe('string'); // 'first_name' should be a string
+            expect(typeof element.last_name).toBe('string'); // 'last_name' should be a string
+            expect(typeof element.avatar).toBe('string');
+
+            // Avatar url validation
+            const urlPattern = /^(https?:\/\/[^\s$.?#].[^\s]*)$/i;
+            expect(urlPattern.test(element.avatar)).toBe(true);
         });
     });
 });
