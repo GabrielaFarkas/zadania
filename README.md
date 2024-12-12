@@ -1,4 +1,10 @@
 # zadania
+
+to install project:
+npm install
+
+
+usefull commands:
 version control commands:
 node -v
 nmp -v
@@ -7,8 +13,6 @@ to install:
 nodejs
 https://nodejs.org/en/download/prebuilt-installer
 
-npm
-npm install -g npm
 
 
 PW commands:

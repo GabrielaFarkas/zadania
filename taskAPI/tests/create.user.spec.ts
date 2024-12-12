@@ -12,7 +12,9 @@ const responseSchema = Joi.object({
 });
 
 test.describe('POST- Create users test', () => {
-    test('POST request- create user, verify data', async ({ request }) => {
+    test('POST request- create user, verify response data and response schema and time less than given limit', async ({
+        request,
+    }) => {
         const response = await request.post('https://reqres.in/api/users', {
             data: testData,
         });
