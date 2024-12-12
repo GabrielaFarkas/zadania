@@ -28,6 +28,9 @@ test.describe('POST- Create users test', () => {
         expect(responseTime).toBeLessThan(limit);
 
         const responseData = await response.json();
+        
+        expect(response.id).toBeDefined();
+        expect(response.createdAt).toBeDefined();
 
         const { error } = responseSchema.validate(responseData);
         expect(error).toBeFalsy();
